@@ -1,15 +1,13 @@
 .nav{
     background-color: #8EC760;
-    height: 33.33%;
+    min-height:35.3vh;
     align-items: center;
-    padding-top: 200px;
     width: 100%;
 }
 
 .nav-image{
     
     background-color: #8EC760;
- height:33.33%;
    position: sticky;
    top: 0;
    transition: 0.5s;
@@ -18,14 +16,14 @@
 
 .image{
   
-    width: 33%;
+    width: 55%;
     min-width: 150px;
   height: 250px;
   transition: 0.5s;
  }
 
 .sticky {
-    max-height: 100px;
+    min-height: 70px;
     position: sticky;
     
    top: 0;
@@ -35,6 +33,6 @@
 }
 
 .brand-sticky{
-    height: 100px;
+    height: 70px;
     transition: 0.5s;
 }
