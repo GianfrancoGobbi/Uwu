@@ -3,6 +3,7 @@
     min-height:35.3vh;
     align-items: center;
     width: 100%;
+    z-index: 29;
 }
 
 .nav-image{
@@ -11,7 +12,7 @@
    position: sticky;
    top: 0;
    transition: 0.5s;
-   z-index: 2;
+   z-index: 10;
 }
 
 .image{
