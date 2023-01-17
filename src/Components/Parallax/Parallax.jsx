@@ -26,7 +26,7 @@ function ParallaxContent() {
   };
 
   return <div style={contentStyle}>
-    <img className="img-parallax" src={image} />
+    <img className="img-parallax" src={image} alt="img-parallax"/>
     dasdsads
   </div>;
 }
