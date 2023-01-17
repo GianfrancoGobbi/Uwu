@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
-import image from "./parallax.svg"
-import "./Parallax.css"
+import image from "./delivery-uwu.png"
+import "./Delivery.css"
 
-function ParallaxContent() {
+function Delivery() {
   const [scrollY, setScrollY] = useState(0);
 
   useEffect(() => {
@@ -19,16 +19,17 @@ function ParallaxContent() {
 
   const contentStyle = {
     position: "absolute",
-    top: "120vh",
+    top: "100vh",
     left: 0,
     width: "100%",
-    transform: `translateY(${scrollY * 0.4}px)`,
-    pointerEvents: "none"
+    transform: `translateY(${scrollY * 0.3}px)`,
   };
 
   return <div style={contentStyle}>
-    <img className="img-parallax" src={image} alt="img-parallax"/>
+    <a href="https://api.whatsapp.com/send/?phone=%2B5492612121551&text&type=phone_number&app_absent=0">
+      <img className="img-Delivery" src={image} alt="img-Delivery" />
+    </a>
   </div>;
 }
 
-export default ParallaxContent;
+export default Delivery;
