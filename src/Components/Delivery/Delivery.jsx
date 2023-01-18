@@ -19,7 +19,7 @@ function Delivery() {
 
   const contentStyle = {
     position: "absolute",
-    top: "100vh",
+    top: "85vh",
     left: 0,
     width: "100%",
     transform: `translateY(${scrollY * 0.3}px)`,
