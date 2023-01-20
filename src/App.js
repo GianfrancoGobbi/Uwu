@@ -13,6 +13,8 @@ function App() {
       <div className='img-mock-container'>
         <img className='img-mock' src={img} alt="img-app"></img>
         <img className='img-mock' src={img} alt="img-app"></img>
+        <img className='img-mock' src={img} alt="img-app"></img>
+        <img className='img-mock' src={img} alt="img-app"></img>
       </div>
       <Delivery />
       <Carta/>
