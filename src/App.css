@@ -24,8 +24,16 @@
   color: white;
 }
 
-.img-mock{
+.img-mock {
   width: 100%;
+  z-index: 1;
+  filter: blur(4px) opacity(20%);
+  animation: girar 704s linear infinite;
+}
+
+.img-mock-container{
+  width: 100%;
+  overflow: hidden;
 }
 
 .App-link {
@@ -36,7 +44,18 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes girar {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
     transform: rotate(360deg);
   }
 }

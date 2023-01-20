@@ -1,39 +1,39 @@
-.nav{
+.nav {
     background-color: #8EC760;
-    min-height:35.3vh;
+    min-height: 35.3vh;
     align-items: center;
     width: 100%;
     z-index: 29;
 }
 
-.nav-image{
-    
+.nav-image {
+
     background-color: #8EC760;
-   position: sticky;
-   top: 0;
-   transition: 0.5s;
-   z-index: 10;
+    position: sticky;
+    top: 0;
+    transition: 0.5s;
+    z-index: 10;
 }
 
-.image{
-  
+.image {
+
     width: 55%;
     min-width: 150px;
-  height: 250px;
-  transition: 0.5s;
- }
+    height: 250px;
+    transition: 0.5s;
+}
 
 .sticky {
     min-height: 70px;
     position: sticky;
-    
-   top: 0;
+
+    top: 0;
     background-color: 8EC760;
     color: white;
     transition: 0.5s;
 }
 
-.brand-sticky{
+.brand-sticky {
     height: 70px;
     transition: 0.5s;
 }
