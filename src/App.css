@@ -1,4 +1,4 @@
-.App {
+g.App {
   text-align: center;
 }
 
@@ -24,17 +24,7 @@
   color: white;
 }
 
-.img-mock {
-  width: 100%;
-  z-index: 1;
-  filter: blur(4px) opacity(20%);
-  animation: girar 704s linear infinite;
-}
 
-.img-mock-container{
-  width: 100%;
-  overflow: hidden;
-}
 
 .App-link {
   color: #61dafb;

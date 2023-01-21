@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import image from "./carta.png"
 import "./Carta.css"
+import { Link } from 'react-router-dom';
 
 function Carta() {
   const [scrollY, setScrollY] = useState(0);
@@ -23,13 +24,17 @@ function Carta() {
     left: 0,
     width: "100%",
     transform: `translateY(${scrollY * 0.3}px)`,
+    display: "flex",
+    justifyContent: "center",
   };
 
   return <div style={contentStyle}>
-    <a href="https://api.whatsapp.com/send/?phone=%2B5492612121551&text&type=phone_number&app_absent=0">
+    <Link to="/carta" >
       <img className="img-Carta" src={image} alt="img-Carta" />
-    </a>
+    </Link>
   </div>;
 }
 
 export default Carta;
+
+

@@ -22,6 +22,8 @@ function Delivery() {
     top: "85vh",
     left: 0,
     width: "100%",
+    display: "flex",
+    justifyContent: "center",
     transform: `translateY(${scrollY * 0.3}px)`,
   };
 
