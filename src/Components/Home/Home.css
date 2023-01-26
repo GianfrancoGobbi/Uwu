@@ -14,7 +14,7 @@
 
 @media (max-width:992px){
     .img-mock {
-        width: 150%;
+        width: 170%;
         animation: girar 54s linear infinite;
     }
 }
