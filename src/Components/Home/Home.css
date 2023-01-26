@@ -11,6 +11,14 @@
     animation: girar 354s linear infinite;
 }
 
+
+@media (max-width:992px){
+    .img-mock {
+        width: 150%;
+        animation: girar 54s linear infinite;
+    }
+}
+
 .img-mock-container {
     width: 100%;
     overflow: hidden;
