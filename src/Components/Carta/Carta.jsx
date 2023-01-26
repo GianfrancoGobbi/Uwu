@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
-import image from "./carta.png"
-import "./Carta.css"
-import { Link } from 'react-router-dom';
+import image from "./carta.png";
+import "./Carta.css";
+import { NavLink } from 'react-router-dom';
 
 function Carta() {
   const [scrollY, setScrollY] = useState(0);
@@ -28,11 +28,13 @@ function Carta() {
     justifyContent: "center",
   };
 
-  return <div style={contentStyle}>
-    <Link to="/carta" >
-      <img className="img-Carta" src={image} alt="img-Carta" />
-    </Link>
-  </div>;
+  return <>
+    <NavLink to="/carta" >
+      <div style={contentStyle}>
+        <img className="img-Carta" src={image} alt="img-Carta" />
+      </div>
+    </NavLink >
+  </>
 }
 
 export default Carta;

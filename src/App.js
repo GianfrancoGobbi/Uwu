@@ -6,10 +6,10 @@ import Home from './Components/Home/Home';
 function App() {
   return (
     <div className="App">
-      <Route path="/" component={Home} />
+      <Route exact path="/" component={Home} />
       <Route path="/carta" component={Cartapdf} />
     </div >
-  );
+  )
 }
 
 export default App;

@@ -1,10 +1,8 @@
-import pdf from "./carta.pdf"
-import "./Carta-pdf.css"
 import React, { useState, useEffect } from "react";
+import image from "./ubicacion.png"
+import "./Ubicacion.css"
 
-function Cartapdf() {
-
-  // eslint-disable-next-line
+function Delivery() {
   const [scrollY, setScrollY] = useState(0);
 
   useEffect(() => {
@@ -21,20 +19,19 @@ function Cartapdf() {
 
   const contentStyle = {
     position: "absolute",
-    top: "0px",
-    zIndex: 500,
+    top: "255vh",
     left: 0,
     width: "100%",
-    height: "100%",
     display: "flex",
     justifyContent: "center",
+    transform: `translateY(${scrollY * 0.3}px)`,
   };
 
-  return <>
-    <div style={contentStyle}>
-      <iframe src={pdf} width="100%" height="100%" title="carta"></iframe>
-    </div>
-  </>
+  return <div style={contentStyle}>
+    <a href="https://goo.gl/maps/1X6YQa13TX7djfYN9">
+      <img className="img-ubicacion" src={image} alt="img-ubicacion" />
+    </a>
+  </div>;
 }
 
-export default Cartapdf;
+export default Delivery;

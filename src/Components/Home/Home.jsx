@@ -1,9 +1,9 @@
 import './Home.css'
 import Nav from '../Nav/Nav';
 import img from '../Nav/hojas.svg';
-import ParallaxContent from '../Parallax/Parallax';
 import Delivery from '../Delivery/Delivery';
 import Carta from '../Carta/Carta';
+import Ubicacion from '../Ubicacion/Ubicacion';
 
 function Home() {
   return <div >
@@ -16,7 +16,7 @@ function Home() {
     </div>
     <Delivery />
     <Carta />
-    <ParallaxContent />
+    <Ubicacion />
   </div>;
 }
 
