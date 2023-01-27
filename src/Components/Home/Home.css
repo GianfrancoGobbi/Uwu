@@ -12,16 +12,24 @@
 }
 
 
-@media (max-width:992px){
-    .img-mock {
-        width: 170%;
-        animation: girar 54s linear infinite;
-    }
-}
+
 
 .img-mock-container {
     width: 100%;
     overflow: hidden;
+    max-height: 400vh;
+    pointer-events: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-rain {
+    width: 100%;
+    position: relative;
+    top: -200vh;
+    animation: giraralrevez 304s linear infinite;
+    z-index: 2;
+    pointer-events: none;
 }
 
 @keyframes girar {
@@ -32,4 +40,39 @@
     100% {
         transform: rotate(360deg);
     }
+}
+
+@keyframes giraralrevez {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(-360deg);
+    }
+}
+
+
+.subido {
+    width: 100%;
+    position: relative;
+    top: -600vh;
+    margin-bottom: -400vh;
+}
+
+@media (max-width:992px) {
+    .img-mock {
+        width: 170%;
+        animation: girar 54s linear infinite;
+    }
+
+    .img-rain {
+        width: 200%;
+        top: -50vh;
+    }
+
+    .subido {
+     margin-top: 3500px;
+    }
+
 }
