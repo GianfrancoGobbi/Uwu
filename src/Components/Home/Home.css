@@ -23,14 +23,6 @@
     justify-content: center;
 }
 
-.img-rain {
-    width: 100%;
-    position: relative;
-    top: -200vh;
-    animation: giraralrevez 304s linear infinite;
-    z-index: 2;
-    pointer-events: none;
-}
 
 @keyframes girar {
     0% {
@@ -53,26 +45,13 @@
 }
 
 
-.subido {
-    width: 100%;
-    position: relative;
-    top: -600vh;
-    margin-bottom: -400vh;
-}
-
 @media (max-width:992px) {
     .img-mock {
-        width: 170%;
+        margin-top: 150px;
+        width: 200%;
+        margin-bottom: 500px;
         animation: girar 54s linear infinite;
     }
 
-    .img-rain {
-        width: 200%;
-        top: -50vh;
-    }
-
-    .subido {
-     margin-top: 3500px;
-    }
-
 }
+

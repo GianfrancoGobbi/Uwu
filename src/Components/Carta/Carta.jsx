@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import image from "./carta.png";
 import "./Carta.css";
 import { NavLink } from 'react-router-dom';
+import hojas from "../../Assets/rain.svg"
 
 function Carta() {
   const [scrollY, setScrollY] = useState(0);
@@ -31,7 +32,10 @@ function Carta() {
   return <>
     <NavLink to="/carta" >
       <div style={contentStyle}>
-        <img className="img-Carta" src={image} alt="img-Carta" />
+        <div className="contenedor-hojas">
+          <img className="img-Carta" src={image} alt="img-Carta" />
+          <img className="hojas" src={hojas} alt="asdsa"></img>
+        </div>
       </div>
     </NavLink >
   </>

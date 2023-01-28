@@ -1,6 +1,31 @@
-.img-Delivery{
-    width: 100%;
+.img-Delivery {
     max-width: 500px;
     z-index: 40;
-    
+}
+
+.contenedor-hojas {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.hojas {
+    width: 95%;
+    position: absolute;
+    animation: girar 130s linear infinite;
+    margin-left: -5px;
+    /* ocultar borde izquierdo */
+    margin-right: -5px;
+    pointer-events: none;
+    display: inline-block;
+}
+
+@media (max-width:992px) {
+    .hojas {
+        width: 195%;
+        position: absolute;
+        animation: girar 130s linear infinite;
+    }
 }

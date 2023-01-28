@@ -21,9 +21,11 @@ export function Nav() {
         const currentScroll = window.pageYOffset;
         if (currentScroll >= 150) {
             document.getElementById("nav-image").classList.add("sticky");
+            document.getElementById("nav-image").classList.add("fixed");
             document.getElementById("brand").classList.add("brand-sticky");
         } else {
             document.getElementById("nav-image").classList.remove("sticky");
+            document.getElementById("nav-image").classList.remove("fixed");
             document.getElementById("brand").classList.remove("brand-sticky");
         }
     }
@@ -31,7 +33,7 @@ export function Nav() {
 
 
     return (
-        <>
+        <div className="navcontainer">
             <div className="nav" >
             </div >
             <div className="nav-image" id='nav-image' >
@@ -39,7 +41,7 @@ export function Nav() {
             </div>
             <div className="nav"  >
             </div >
-        </>
+        </div>
     )
 }
 

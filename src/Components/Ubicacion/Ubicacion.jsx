@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import image from "./ubicacion.png"
 import "./Ubicacion.css"
+import hojas from "../../Assets/rain.svg"
 
 function Delivery() {
   const [scrollY, setScrollY] = useState(0);
@@ -28,9 +29,12 @@ function Delivery() {
   };
 
   return <div style={contentStyle}>
-    <a href="https://goo.gl/maps/1X6YQa13TX7djfYN9">
-      <img className="img-ubicacion" src={image} alt="img-ubicacion" />
-    </a>
+    <div className="contenedor-hojas">
+      <a href="https://goo.gl/maps/1X6YQa13TX7djfYN9">
+        <img className="img-ubicacion" src={image} alt="img-ubicacion" />
+      </a>
+      <img className="hojas" src={hojas} alt="asdsa"></img>
+    </div>
   </div>;
 }
 

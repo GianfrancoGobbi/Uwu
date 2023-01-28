@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import image from "./delivery-uwu.png"
 import "./Delivery.css"
+import hojas from "../../Assets/rain.svg"
 
 function Delivery() {
   const [scrollY, setScrollY] = useState(0);
@@ -19,7 +20,7 @@ function Delivery() {
 
   const contentStyle = {
     position: "absolute",
-    top: "85vh",
+    top: "84vh",
     left: 0,
     width: "100%",
     display: "flex",
@@ -28,9 +29,12 @@ function Delivery() {
   };
 
   return <div style={contentStyle}>
-    <a href="https://api.whatsapp.com/send/?phone=%2B5492612121551&text&type=phone_number&app_absent=0">
-      <img className="img-Delivery" src={image} alt="img-Delivery" />
-    </a>
+    <div className="contenedor-hojas">
+      <a href="https://api.whatsapp.com/send/?phone=%2B5492612121551&text&type=phone_number&app_absent=0">
+        <img className="img-Delivery" src={image} alt="img-Delivery" />
+      </a>
+      <img className="hojas" src={hojas} alt="asdsa"></img>
+    </div>
   </div>;
 }
 
